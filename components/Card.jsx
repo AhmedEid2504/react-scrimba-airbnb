@@ -16,6 +16,7 @@ export default function Card(props) {
             }
             <img 
                 src={props.coverImg} 
+                alt="Cover image for card"
                 className="card--image" 
             />
             <div className="card--stats">
@@ -36,6 +37,7 @@ Card.propTypes = {
     openSpots: PropTypes.number.isRequired,
     location: PropTypes.string.isRequired,
     coverImg: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
     stats: PropTypes.shape({
         rating: PropTypes.number.isRequired,
         reviewCount: PropTypes.number.isRequired,
