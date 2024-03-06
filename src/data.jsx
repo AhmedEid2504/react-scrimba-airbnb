@@ -1,6 +1,6 @@
 
 
-export default [
+const data = [
     {
     id: 1,
     title: "Exciting Adventure in the Mountains",
@@ -262,3 +262,10 @@ export default [
     openSpots: 5
   }
 ];
+
+const section1Data = data.slice(0, 7); // Adjust the range based on your data
+const section2Data = data.slice(7, 13);
+const section3Data = data.slice(13);
+
+// Export the split data
+export { section1Data, section2Data, section3Data };
