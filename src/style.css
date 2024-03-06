@@ -59,18 +59,38 @@ section {
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 15px;
     overflow-x: auto;
     margin-top: 50px;
 }
 
 .card {
-    width: 400px;
+    width: 420px;
     font-size: 1.2rem;
-    flex: 0 0 auto;         
+    flex: 0 0 auto;
+    align-items: center;         
     display: flex;          
     flex-direction: column; 
     position: relative;
+    
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.card-link:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.4s;
+    color: white;
+}
+
+.card-link:hover .card--badge {
+    background-color: rgba(0, 0, 0, 0.6);
+    
 }
 
 .card--image {
@@ -80,7 +100,7 @@ section {
     margin-bottom: 18px;
 }
 
-/* ADD */
+
 .card--title {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -92,23 +112,24 @@ section {
 }
 
 .card--star {
-    height: 14px;
+    height: 15px;
 }
 
-/* ADD */
+
 .card--price {
     margin-top: auto;
 }
 
 .card--badge {
     position: absolute;
-    top: 6px;
-    left: 6px;
+    top: 10px;
+    left: 22px;
     background-color: white;
     padding: 5px 7px;
-    border-radius: 2px;
+    border-radius: 10px;
     font-weight: bold;
 }
+
 @media only screen and (max-width: 768px) {
     
     .hero {
@@ -130,18 +151,18 @@ section {
     }
 
     .cards-list {
-        margin: 28px;        
-        gap: 50px;
+        margin: 25px;        
+        gap: 0px;
     }
     .card {
-        width: 250px;
-        font-size: 1.1rem;
+        width: 280px;
+        font-size: 0.9rem;
         
     }
 
     .card--image {
-        width: 280px;
-        height: 220px;
+        width: 250px;
+        height: 230px;
         border-radius: 9px;
         margin-bottom: 18px;
     }
