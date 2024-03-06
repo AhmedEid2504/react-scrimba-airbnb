@@ -1,7 +1,10 @@
 import Navbar from "../components/Navbar"
-import Hero from "../components/Hero"
 import Card from "../components/Card"
 import data from "./data"
+import SectionHeader from '../components/SectionHeader'
+import sectionData from "./SectionsData"
+
+
 
 export default function App() {
     const cards = data.map(item => {
@@ -12,14 +15,18 @@ export default function App() {
                 
             />
         )
-    })        
+    })    
+    const sections = sectionData.map(item => (
+        <div key={item.id}>
+            <SectionHeader imageUrl={item.imageUrl} headerText={item.headerText} paragraphText={item.paragraphText} />
+            <section className="cards-list">{cards}</section>
+        </div>
+    ));
+    
     return (
         <div>
             <Navbar />
-            <Hero />
-            <section className="cards-list">
-                {cards}
-            </section>
+            {sections}
         </div>
     )
 }

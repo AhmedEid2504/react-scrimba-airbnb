@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-snap-align: start;
 }
 
 nav {
@@ -29,45 +30,53 @@ nav {
 section {
     padding: 20px;
 }
-
 .hero {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    gap:  20px;
 }
 
 .hero--photo {
     max-width: 80vw;
     align-self: center;
+    height: 80vh;
 }
 
 .hero--header {
     margin-bottom: 16px;
+    font-size: 1.8rem;
 }
 
 .hero--text {
     margin-top: 0;
+    font-size: 1.3rem;
 }
 
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 30px;
     overflow-x: auto;
+    margin-top: 50px;
 }
 
 .card {
-    width: 175px;
+    width: 300px;
     font-size: 12px;
-    flex: 0 0 auto;         /* ADD */
-    display: flex;          /* ADD */
-    flex-direction: column; /* ADD */
+    flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
     position: relative;
 }
 
 .card--image {
-    width: 100%;
+    width: 300px;
+    height: 300px;
     border-radius: 9px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
 }
 
 /* ADD */
@@ -98,4 +107,24 @@ section {
     padding: 5px 7px;
     border-radius: 2px;
     font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    
+    .hero {
+        height: 70vh;
+    }
+    .hero--photo {
+            max-width: 80vw;
+            align-self: center;
+            height: auto;
+    }
+    
+    .hero--header {
+        font-size: 1.5rem;
+    }
+    
+
+    .hero--text {
+        font-size: 1.2rem;
+    }
 }
