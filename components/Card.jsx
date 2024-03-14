@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-export default function Card(props) {
+function Card(props) {
+
     let badgeText
     if (props.openSpots === 0) {
         badgeText = "SOLD OUT"
@@ -9,8 +10,7 @@ export default function Card(props) {
     }
     
     return (
-        <a href="#" className='card-link'>
-            <div className="card">
+            <div className="card" onClick={props.handleOpen}>
                 {
                     badgeText && 
                     <div className="card--badge">{badgeText}</div>
@@ -31,8 +31,6 @@ export default function Card(props) {
                     <span className="bold">From ${props.price}</span> / person
                 </p>
             </div>
-        </a>
-        
     )
 }
 
@@ -47,4 +45,7 @@ Card.propTypes = {
     }).isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
+    handleOpen: PropTypes.func.isRequired,
 };
+
+export default Card

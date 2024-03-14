@@ -91,23 +91,18 @@ section {
     display: flex;          
     flex-direction: column; 
     position: relative;
-    
-}
-
-.card-link {
-    text-decoration: none;
-    color: inherit;
     cursor: pointer;
     padding-top: 10px;
     border-radius: 15px;
 }
-.card-link:hover {
+
+.card:hover {
     background-color: rgba(0, 0, 0, 0.6);
     transition: all 0.4s;
     color: white;
 }
 
-.card-link:hover .card--badge {
+.card:hover .card--badge {
     background-color: rgba(0, 0, 0, 0.6);
     
 }
@@ -127,11 +122,15 @@ section {
 
 .card--stats {
     display: flex;
+    justify-content: center;
     align-items: center;
+    justify-items: center;
+    padding: 2px;
 }
 
 .card--star {
-    height: 15px;
+    height: 20px;
+    padding-bottom: 3px;
 }
 
 
@@ -141,12 +140,45 @@ section {
 
 .card--badge {
     position: absolute;
-    top: 10px;
-    left: 22px;
+    top: 20px;
+    left: 20px;
     background-color: white;
-    padding: 5px 7px;
+    padding:5px;
     border-radius: 10px;
     font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 9999; /* Ensure the overlay is above everything else */
+}
+
+  /* Modal Container */
+.modal-content {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff; /* Background color of the modal */
+padding: 40px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for the modal */
+z-index: 10000; /* Ensure the modal is above the overlay */
+}
+
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: transparent;
+
+cursor: pointer;
+font-size: 16px;
+color: #333;
 }
 
 @media only screen and (max-width: 768px) {

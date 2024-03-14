@@ -11,7 +11,7 @@ const Sections = ({ sectionData, cardsData }) => {
         />
         <section className="cards-list">
             {cardsData[index].map(cardItem => (
-            <Card key={cardItem.id} {...cardItem} />
+            <Card key={cardItem.id} {...cardItem}/>
             ))}
         </section>
         </div>
