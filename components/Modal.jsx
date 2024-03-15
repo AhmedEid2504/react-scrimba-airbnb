@@ -17,7 +17,7 @@ const Modal = ({ handleClose, title, coverImg, stats, location, description, pri
             // Remove event listener when component unmounts
             document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, []);
+    });
     
     return (
         <div className="modal">
@@ -34,7 +34,8 @@ const Modal = ({ handleClose, title, coverImg, stats, location, description, pri
                         <span className="bold">From ${price}</span> / person
                     </p>
                     <p>{description}</p>
-                    <button>Book Now</button>
+                    <p>{location}</p>
+                    <button className='modal-buy'>Book Now</button>
                 </div>
             </div>
         </div>
