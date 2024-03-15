@@ -188,8 +188,8 @@ section {
     align-items: center;
     gap: 15px;
     top: 50%;
-    left: 25%;
-    transform: translate(50%, -50%);
+    left: 75%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -217,7 +217,7 @@ right: 10px;
     align-self: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
     
     .hero {
         height: 70vh;
