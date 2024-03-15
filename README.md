@@ -1,8 +1,12 @@
-# React + Vite
+# React AirBnb Clone    
+Made while Practicing React
+-Currently it has just one page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Home Page: It displays the list of available Events the user can click
+on each card and it will display a modal with the details of that event
+with a button to book the event.
 
-Currently, two official plugins are available:
+- The data is in a js file for now 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- the page has different sections with different cards of events
+
