@@ -1,40 +1,51 @@
-import PropTypes from 'prop-types';
-import { useEffect, useRef } from 'react';
-const Modal = ({ handleClose, title, coverImg, stats, location, description, price }) => {
-    const modalRef = useRef(null);
+import PropTypes from 'prop-types'; // Importing PropTypes for prop type validation
+import { useEffect, useRef } from 'react'; // Importing useEffect and useRef hooks from React
 
-    // Close modal when user clicks outside of it
+// Modal component definition
+const Modal = ({ handleClose, title, coverImg, location, description, price }) => {
+    const modalRef = useRef(null); // Ref for modal element
+
+    // Function to handle click outside of modal to close it
     const handleClickOutside = (event) => {
         if (modalRef.current && !modalRef.current.contains(event.target)) {
             handleClose();
         }
     };
+
+    // Add event listener for click outside of modal when component mounts
     useEffect(() => {
-        // Add event listener when component mounts
         document.addEventListener('mousedown', handleClickOutside);
 
+        // Clean up event listener when component unmounts
         return () => {
-            // Remove event listener when component unmounts
             document.removeEventListener('mousedown', handleClickOutside);
         };
     });
-    
+
+    // Rendering JSX for the modal
     return (
         <div className="modal">
             <div className="modal-content" ref={modalRef}>
                 <div>
+                    {/* Close button */}
                     <button className="close-btn" onClick={handleClose}>
                         Close
                     </button>
+                    {/* Modal image */}
                     <img src={coverImg} alt="Cover image for card" className="modal-image" />
                 </div>
                 <div className='modal-details'>
+                    {/* Modal title */}
                     <h2>{title}</h2>
+                    {/* Modal price */}
                     <p>
                         <span className="bold">From ${price}</span> / person
                     </p>
+                    {/* Modal description */}
                     <p>{description}</p>
+                    {/* Modal location */}
                     <p>{location}</p>
+                    {/* Book now button */}
                     <button className='modal-buy'>Book Now</button>
                 </div>
             </div>
@@ -42,17 +53,14 @@ const Modal = ({ handleClose, title, coverImg, stats, location, description, pri
     );
 };
 
+// Prop type validation for the Modal component
 Modal.propTypes = {
-    handleClose: PropTypes.func.isRequired,
-    title: PropTypes.string.isRequired,
-    coverImg: PropTypes.string.isRequired,
-    stats: PropTypes.shape({
-        rating: PropTypes.number.isRequired,
-        reviewCount: PropTypes.number.isRequired,
-    }).isRequired,
-    location: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
+    handleClose: PropTypes.func.isRequired, // Function to handle closing the modal
+    title: PropTypes.string.isRequired, // Title of the activity
+    coverImg: PropTypes.string.isRequired, // URL for the cover image
+    location: PropTypes.string.isRequired, // Location of the activity
+    description: PropTypes.string.isRequired, // Description of the activity
+    price: PropTypes.number.isRequired, // Price per person
 };
 
-export default Modal;
+export default Modal; // Exporting the Modal component as default
