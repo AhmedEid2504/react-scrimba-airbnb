@@ -35,7 +35,7 @@ nav {
 }
 
 button {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background-color: black;
     color: white;
     padding: 5px;
@@ -43,12 +43,14 @@ button {
     border:none;
     cursor: pointer;
     border:  3px double black;
+    font-weight: bold;
 }
 button:hover {
     background-color: white;
     color: black;
-    border:  3px double black;
+    border:  3px solid black;
     transition:ease-in .3s;
+    
 }
 
 .bold {
@@ -182,7 +184,7 @@ section {
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 15px;
     top: 50%;
@@ -265,7 +267,7 @@ right: 10px;
       /* Modal Container */
     .modal-content {
         width: 85vw;
-        height: 93dvh;
+        height: 92dvh;
         left: 50%;
         display: flex;
         flex-direction: column;
