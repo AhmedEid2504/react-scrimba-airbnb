@@ -9,16 +9,21 @@ const Modal = ({ handleClose, title, coverImg, location, description, price }) =
     const handleClickOutside = (event) => {
         if (modalRef.current && !modalRef.current.contains(event.target)) {
             handleClose();
+            document.body.style.overflow = 'scroll';
         }
     };
 
     // Add event listener for click outside of modal when component mounts
     useEffect(() => {
+        // Prevent scrolling on the body when modal is open
+        document.body.style.overflow = 'hidden';
+
         document.addEventListener('mousedown', handleClickOutside);
 
         // Clean up event listener when component unmounts
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
+            document.body.style.overflow = 'scroll';
         };
     });
 
