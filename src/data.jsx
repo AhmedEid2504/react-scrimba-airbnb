@@ -6,7 +6,7 @@ const data = [
     title: "Exciting Adventure in the Mountains",
     description: "Embark on a thrilling journey through the majestic mountains. Experience the beauty of nature and conquer new heights!",
     price: 120,
-    coverImg: "https://source.unsplash.com/600x400/?mountains",
+    coverImg: "https://picsum.photos/id/1/1080/800",
     stats: {
       rating: 4.8,
       reviewCount: 15
@@ -19,7 +19,7 @@ const data = [
     title: "Digital Marketing Workshop",
     description: "Unlock the secrets of successful digital marketing. Learn strategies to boost your online presence and reach a wider audience.",
     price: 80,
-    coverImg: "https://source.unsplash.com/600x400/?marketing",
+    coverImg: "https://picsum.photos/id/2/1080/800",
     stats: {
       rating: 4.5,
       reviewCount: 12
@@ -32,7 +32,7 @@ const data = [
     title: "Art Exhibition: Colors of Expression",
     description: "Immerse yourself in a world of vibrant colors and artistic expression. Join us for an evening of creativity and inspiration.",
     price: 25,
-    coverImg: "https://source.unsplash.com/600x400/?art",
+    coverImg: "https://picsum.photos/id/3/1080/800",
     stats: {
       rating: 4.9,
       reviewCount: 20
@@ -45,7 +45,7 @@ const data = [
     title: "Cooking Class: Culinary Delights",
     description: "Learn the art of cooking from renowned chefs. Discover new recipes and savor the flavors of exquisite dishes.",
     price: 60,
-    coverImg: "https://source.unsplash.com/600x400/?cooking",
+    coverImg: "https://picsum.photos/id/4/1080/800",
     stats: {
       rating: 4.7,
       reviewCount: 18
@@ -58,7 +58,7 @@ const data = [
     title: "Fitness Bootcamp: Shape Your Body",
     description: "Join our fitness bootcamp to achieve your fitness goals. Train with expert instructors and transform your body.",
     price: 90,
-    coverImg: "https://source.unsplash.com/600x400/?fitness",
+    coverImg: "https://picsum.photos/id/5/1080/800",
     stats: {
       rating: 4.6,
       reviewCount: 14
@@ -71,7 +71,7 @@ const data = [
     title: "Photography Workshop: Capturing Moments",
     description: "Enhance your photography skills with our workshop. Capture stunning moments and unleash your creative potential.",
     price: 40,
-    coverImg: "https://source.unsplash.com/600x400/?photography",
+    coverImg: "https://picsum.photos/id/6/1080/800",
     stats: {
       rating: 4.8,
       reviewCount: 16
@@ -84,7 +84,7 @@ const data = [
     title: "Yoga Retreat: Mindful Relaxation",
     description: "Immerse yourself in a yoga retreat for mindful relaxation. Find balance and tranquility in the midst of serene surroundings.",
     price: 100,
-    coverImg: "https://source.unsplash.com/600x400/?yoga",
+    coverImg: "https://picsum.photos/id/7/1080/800",
     stats: {
       rating: 4.9,
       reviewCount: 22
@@ -97,7 +97,7 @@ const data = [
     title: "Tech Innovation Summit",
     description: "Explore the latest technological innovations at our summit. Connect with industry leaders and stay ahead in the tech world.",
     price: 120,
-    coverImg: "https://source.unsplash.com/600x400/?technology",
+    coverImg: "https://picsum.photos/id/8/1080/800",
     stats: {
       rating: 4.7,
       reviewCount: 19
@@ -110,7 +110,7 @@ const data = [
     title: "Concert Under the Stars",
     description: "Enjoy a magical night of music under the stars. Experience soulful performances and create lasting memories.",
     price: 55,
-    coverImg: "https://source.unsplash.com/600x400/?music",
+    coverImg: "https://picsum.photos/id/9/1080/800",
     stats: {
       rating: 4.5,
       reviewCount: 17
@@ -123,7 +123,7 @@ const data = [
     title: "Coding Bootcamp: Mastering Programming",
     description: "Join our coding bootcamp to master the art of programming. Enhance your skills and embark on a journey in software development.",
     price: 85,
-    coverImg: "https://source.unsplash.com/600x400/?coding",
+    coverImg: "https://picsum.photos/id/10/1080/800",
     stats: {
       rating: 4.8,
       reviewCount: 21
@@ -136,7 +136,7 @@ const data = [
     title: "Gardening Workshop: Green Thumb Mastery",
     description: "Learn the secrets of gardening and develop a green thumb. Cultivate beautiful plants and create your own oasis at home.",
     price: 30,
-    coverImg: "https://source.unsplash.com/600x400/?gardening",
+    coverImg: "https://picsum.photos/id/12/1080/800",
     stats: {
       rating: 4.6,
       reviewCount: 13
@@ -149,7 +149,7 @@ const data = [
     title: "Language Learning Fiesta",
     description: "Dive into a language learning fiesta. Explore diverse languages, cultures, and connect with language enthusiasts.",
     price: 50,
-    coverImg: "https://source.unsplash.com/600x400/?language",
+    coverImg: "https://picsum.photos/id/13/1080/800",
     stats: {
       rating: 4.7,
       reviewCount: 20
@@ -162,7 +162,7 @@ const data = [
     title: "Entrepreneurship Masterclass",
     description: "Join our entrepreneurship masterclass and gain insights into building a successful business. Connect with experienced entrepreneurs and refine your business skills.",
     price: 110,
-    coverImg: "https://source.unsplash.com/600x400/?business",
+    coverImg: "https://picsum.photos/id/14/1080/800",
     stats: {
       rating: 4.9,
       reviewCount: 18
@@ -175,7 +175,7 @@ const data = [
     title: "Film Screening: Cinematic Delights",
     description: "Experience cinematic delights at our film screening event. Immerse yourself in compelling stories and celebrate the art of filmmaking.",
     price: 45,
-    coverImg: "https://source.unsplash.com/600x400/?film",
+    coverImg: "https://picsum.photos/id/15/1080/800",
     stats: {
       rating: 4.8,
       reviewCount: 16
@@ -188,7 +188,7 @@ const data = [
     title: "Science Exploration Day",
     description: "Ignite your curiosity with a science exploration day. Engage in fascinating experiments and discover the wonders of science.",
     price: 65,
-    coverImg: "https://source.unsplash.com/600x400/?science",
+    coverImg: "https://picsum.photos/id/16/1080/800",
     stats: {
       rating: 4.7,
       reviewCount: 15
@@ -201,7 +201,7 @@ const data = [
     title: "Book Club: Literary Conversations",
     description: "Join our book club for literary conversations. Dive into thought-provoking books and connect with fellow book enthusiasts.",
     price: 35,
-    coverImg: "https://source.unsplash.com/600x400/?books",
+    coverImg: "https://picsum.photos/id/17/1080/800",
     stats: {
       rating: 4.6,
       reviewCount: 14
@@ -214,7 +214,7 @@ const data = [
     title: "Fashion Show Extravaganza",
     description: "Witness a fashion show extravaganza showcasing the latest trends. Immerse yourself in the world of style and glamour.",
     price: 75,
-    coverImg: "https://source.unsplash.com/600x400/?fashion",
+    coverImg: "https://picsum.photos/id/18/1080/800",
     stats: {
       rating: 4.8,
       reviewCount: 19
@@ -227,7 +227,7 @@ const data = [
     title: "Music Production Workshop",
     description: "Learn the art of music production in our workshop. Unleash your creativity and produce your own musical masterpieces.",
     price: 95,
-    coverImg: "https://source.unsplash.com/600x400/?musicproduction",
+    coverImg: "https://picsum.photos/id/19/1080/800",
     stats: {
       rating: 4.9,
       reviewCount: 22
@@ -240,7 +240,7 @@ const data = [
     title: "Travel Photography Expedition",
     description: "Embark on a travel photography expedition to capture breathtaking landscapes. Explore new destinations and hone your photography skills.",
     price: 55,
-    coverImg: "https://source.unsplash.com/600x400/?travel",
+    coverImg: "https://picsum.photos/id/20/1080/800",
     stats: {
       rating: 4.7,
       reviewCount: 17
@@ -253,7 +253,7 @@ const data = [
     title: "AI and Robotics Symposium",
     description: "Delve into the world of artificial intelligence and robotics at our symposium. Connect with experts and explore the future of technology.",
     price: 130,
-    coverImg: "https://source.unsplash.com/600x400/?airobotics",
+    coverImg: "https://picsum.photos/id/21/1080/800",
     stats: {
       rating: 4.8,
       reviewCount: 18
